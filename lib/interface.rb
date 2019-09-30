@@ -1,0 +1,1 @@
+#sets class used for initializing the interface. refer to student scraper lesson when needed.
