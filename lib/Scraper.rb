@@ -6,12 +6,16 @@ require 'open-uri'
 
 
 class Scraper 
-  #get array of hashes. each hash relates to one beer on the top 250 list with hash keys to include  name, brewery, type, 
+  #get array of hashes. each hash relates to one beer on the top 250 list with hash keys to include  name, brewery, type, and abv 
 
   
  # def self.scrape
     doc = Nokogiri::HTML(open('https://www.beeradvocate.com/beer/top-rated/'))
     all_beers = doc.search(".hr_bottom_light[@align='left']" #span.muted)  #I only want every 4th element and the first element in this.
+    
+    #adding the span.muted selector gives me everything I want except the beer name.
+    
+    
     beer_list = []
     beer_hash = {}
     #binding.pry
