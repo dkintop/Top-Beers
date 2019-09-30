@@ -11,10 +11,10 @@ class Scraper
   
   #def self.scrape
     doc = Nokogiri::HTML(open('https://www.beeradvocate.com/beer/top-rated/'))
-    all_beers_xml_array = doc.search(".hr_bottom_light[@align='left'] span.muted") 
+    all_beers = doc.search(".hr_bottom_light[@align='left'] span.muted") 
     beer_list = []
     binding.pry
-    all_beers_xml_array.each do|beer| 
+    all_beers.each do|beer| 
       beer_hash = {}
       beer_hash[:name] = beer.css('a b').text
       beer_hash[:brewery] = beer.css('span.muted a').first.text
@@ -22,7 +22,7 @@ class Scraper
       beer_hash[:abv] = beer.css('span').text.split("|")[1].strip
       beer_list << beer_hash
       
-      binding.pry
+      #binding.pry
     end
     beer_list
  # end 
