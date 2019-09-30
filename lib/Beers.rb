@@ -4,7 +4,7 @@ require 'pry'
 
 
 class Beer 
-  attr_accessor :name, :brewery, :type
+  attr_accessor :name, :brewery, :type, :abv
   
   
 end 
