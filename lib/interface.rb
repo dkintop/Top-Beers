@@ -24,7 +24,7 @@ class Interface
   def select_beer
     puts "Please enter the number of the beer you would like to know more about"
     input = gets.chomp.to_i
-    if input >= 1 && input < 50
+    if input >= 1 && input <= 50
       puts "--------------------------"
       puts "Good choice!"
       puts "Rank: #{input}"
@@ -58,4 +58,3 @@ class Interface
   
 end 
 
-Interface.new.run
