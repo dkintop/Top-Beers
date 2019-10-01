@@ -1,6 +1,6 @@
 # BeerCLI
 
-This gem provides a basic CLI interface to allow users to obtain basic information on the top 250 rated beers on beeradvocate.com.
+This gem provides a basic CLI interface to allow users to obtain basic information on the top 50 rated beers on beeradvocate.com.
 
 ## Installation
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+A simple command line interface app. Follow on screen prompts.
 
 ## Development
 
