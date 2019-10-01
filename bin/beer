@@ -1,0 +1,9 @@
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
+require_relative '../lib/Beer.rb'
+require_relative '../lib/interface.rb'
+require_relative '../lib/Scraper.rb'
+
+
+interface.new.menu
