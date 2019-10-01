@@ -27,9 +27,6 @@ class Scraper
     beer_list
   end 
    
-  Scraper.scrape
-   binding.pry
-   
 end 
 
 
