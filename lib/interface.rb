@@ -34,6 +34,7 @@ class Interface
       puts "ABV: #{Beer.all[input - 1].abv}"
     else 
       puts "Please select a valid option"
+      puts "All product information obtained by this application provided by https://www.beeradvocate.com/beer/top-rated/"
     end
   end 
   
@@ -52,6 +53,9 @@ class Interface
         puts "To know more about a different beer on our list enter you're favorite word, to exit enter 'exit'"
         input = gets.chomp 
       end 
+      puts "--------------------------"
+      puts "Bye!"
+      puts "All product information displayed by this application provided by https://www.beeradvocate.com/beer/top-rated/"
     end
   end 
   
