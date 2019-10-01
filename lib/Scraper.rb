@@ -19,7 +19,7 @@ class Scraper
         type = beer.css('span.muted a')[1].text
         abv = beer.css('span').text.split("|")[1].strip
         i += 1
-        Beer.new(name, brewery, type, abv)
+       Beer.new(name, brewery, type, abv)
       end
     end
   end 

@@ -9,7 +9,7 @@ class Beer
   @@all = []
   
  def initialize(name, brewery, type, abv)
-    binding.pry
+    #binding.pry
     @name = name
     @brewery = brewery 
     @type = type
