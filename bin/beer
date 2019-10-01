@@ -6,4 +6,4 @@ require_relative '../lib/interface.rb'
 require_relative '../lib/Scraper.rb'
 
 
-interface.new.menu
+interface.new.run

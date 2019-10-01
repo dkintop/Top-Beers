@@ -14,12 +14,28 @@ class Interface
   Scraper.scrape 
   end
   
-  #welcome message that prompts user for age before proceeding
-  #list of 50 beers, then prompt user for input on beer they would like information from 
-  #display information
-  #asks the user if they would like to select another beer, exit if not.
   
+  def list_beers
+    Beer.all.each_with_index do |beer_object, index|
+      puts "#{index +1}. #{beer_object.name}"
+    end
+  end 
   
+  def select_beer
+    puts "Please enter the number of the beer you would like to know more about"
+    input = gets.chomp.to_i
+    if input >= 1 && input < 50
+      puts "--------------------------"
+      puts "Good choice!"
+      puts "Rank: #{input}"
+      puts "Beer name: #{Beer.all[input - 1].name}"
+      puts "Made by: #{Beer.all[input - 1].brewery}"
+      puts "Type: #{Beer.all[input - 1].type}"
+      puts "ABV: #{Beer.all[input - 1].abv}"
+    else 
+      puts "Please select a valid option"
+    end
+  end 
   
   
   def script   
@@ -29,7 +45,13 @@ class Interface
     if age < 21 
     puts "Sorry, You must be of legal drinking age to use Top Beer Finder"
     else 
-      list_beers
+      input = nil
+      while input != "exit"
+        list_beers
+        select_beer
+        puts "To know more about a different beer on our list enter you're favorite word, to exit enter 'exit'"
+        input = gets.chomp 
+      end 
     end
   end 
   
