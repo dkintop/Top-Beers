@@ -9,7 +9,6 @@ class Beer
   @@all = []
   
  def initialize(name, brewery, type, abv)
-    #binding.pry
     @name = name
     @brewery = brewery 
     @type = type
@@ -17,13 +16,10 @@ class Beer
     @@all << self
   end 
   
- 
-  
-  def self.all 
+ def self.all 
     @@all
   end 
   
-  #create_from_scraper(collection)
-  #binding.pry
+  
   
 end 
