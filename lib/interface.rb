@@ -34,7 +34,6 @@ class Interface
       puts "ABV: #{Beer.all[input - 1].abv}"
     else 
       puts "Please select a valid option"
-      puts "All product information obtained by this application provided by https://www.beeradvocate.com/beer/top-rated/"
     end
   end 
   
