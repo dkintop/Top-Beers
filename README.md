@@ -7,7 +7,7 @@ This gem provides a basic CLI interface to allow users to obtain basic informati
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'Beer_CLI'
+gem 'Top-Beers'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install Beer_CLI
+    $ gem install Top-Beers
 
 ## Usage
 
