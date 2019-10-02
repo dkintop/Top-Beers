@@ -14,6 +14,19 @@ class Interface
   end
   
   
+  def age_verifier
+    puts "Top Beer Finder"
+    puts "Welcome, before beginning please enter your age."
+    age = gets.chomp.to_i 
+    if age < 21 
+    puts "Sorry, You must be at least 21 years old to use Top Beer Finder"
+    puts "Program will self destruct in 5 seconds"
+    sleep(7)
+    end
+    age 
+  end 
+  
+  
   def list_beers
     Beer.all.each_with_index do |beer_object, index|
       puts "#{index +1}. #{beer_object.name}"
@@ -41,18 +54,6 @@ class Interface
     else 
       puts "Please select a valid option"
     end
-  end 
-  
-  def age_verifier
-    puts "Top Beer Finder"
-    puts "Welcome, before beginning please enter your age."
-    age = gets.chomp.to_i 
-    if age < 21 
-    puts "Sorry, You must be at least 21 years old to use Top Beer Finder"
-    puts "Program will self destruct in 5 seconds"
-    sleep(7)
-    end
-    age 
   end 
   
   
