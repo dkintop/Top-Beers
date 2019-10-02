@@ -26,32 +26,39 @@ class Interface
   
   
   def select_beer
+    puts "---------------------------------------------------------------------"
     puts "Please enter the number of the beer you would like to know more about"
     input = gets.chomp.to_i
     if input >= 1 && input <= 50
-      puts "-------------------------------------------------"
+      puts "---------------------------------------------------------------------"
       puts choice_messages.sample
       puts "Rank: #{input}"
       puts "Beer name: #{Beer.all[input - 1].name}"
       puts "Made by: #{Beer.all[input - 1].brewery}"
       puts "Type: #{Beer.all[input - 1].type}"
       puts "ABV: #{Beer.all[input - 1].abv}"
-      puts "-------------------------------------------------"
+      puts "---------------------------------------------------------------------"
     else 
       puts "Please select a valid option"
     end
   end 
   
-  
-  def script   
+  def age_verifier
     puts "Top Beer Finder"
     puts "Welcome, before beginning please enter your age."
     age = gets.chomp.to_i 
     if age < 21 
-    puts "Sorry, You must be of legal drinking age to use Top Beer Finder"
-    else 
+    puts "Sorry, You must be at least 21 years old to use Top Beer Finder"
+    end
+    age 
+  end 
+  
+  
+  def script   
+    if age_verifier >= 21
       input = nil
       while input != "exit"
+        puts "---------------------------------------------------------------------"
         list_beers
         select_beer
         puts "To know more about a different beer on our list press enter, to exit type 'exit' and press enter."
