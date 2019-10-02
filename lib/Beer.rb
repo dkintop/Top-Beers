@@ -1,4 +1,4 @@
-#require "Beer_CLI/version"
+#require "Top-Beers/version"
 require_relative "Scraper.rb"
 require 'pry'
 

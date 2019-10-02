@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    Beer_CLI (0.1.0)
+    Top-Beers (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -20,7 +20,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  Beer_CLI!
+  Top-Beers!
   bundler (~> 2.0)
   nokogiri
   pry

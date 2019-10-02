@@ -2,7 +2,6 @@ require_relative 'Beer.rb'
 require_relative 'Scraper.rb'
 require 'nokogiri'
 require 'pry'
-#sets class used for initializing the interface. refer to student scraper lesson when needed.
 
 class Interface 
   def run
@@ -57,7 +56,5 @@ class Interface
       puts "All product information displayed by this application provided by https://www.beeradvocate.com/beer/top-rated/"
     end
   end 
-  
-  
 end 
 
