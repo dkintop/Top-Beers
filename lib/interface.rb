@@ -20,18 +20,23 @@ class Interface
     end
   end 
   
+  def choice_messages
+    ["Good choice!", "Nice pick!", "That's a good one!", "Great!, here you go!", "One of the best!"]
+  end 
+  
+  
   def select_beer
     puts "Please enter the number of the beer you would like to know more about"
     input = gets.chomp.to_i
     if input >= 1 && input <= 50
-      puts "---------------------------------------"
-      puts "Good choice!"
+      puts "-------------------------------------------------"
+      puts choice_messages.sample
       puts "Rank: #{input}"
       puts "Beer name: #{Beer.all[input - 1].name}"
       puts "Made by: #{Beer.all[input - 1].brewery}"
       puts "Type: #{Beer.all[input - 1].type}"
       puts "ABV: #{Beer.all[input - 1].abv}"
-      puts "---------------------------------------"
+      puts "-------------------------------------------------"
     else 
       puts "Please select a valid option"
     end
@@ -52,7 +57,7 @@ class Interface
         puts "To know more about a different beer on our list press enter, to exit type 'exit' and press enter."
         input = gets.chomp 
       end 
-      puts "---------------------------------------"
+      puts "---------------------------------------------------------------------"
       puts "Bye!"
       puts "All product information displayed by this application provided by:" 
       puts "https://www.beeradvocate.com/beer/top-rated/"
