@@ -49,6 +49,8 @@ class Interface
     age = gets.chomp.to_i 
     if age < 21 
     puts "Sorry, You must be at least 21 years old to use Top Beer Finder"
+    puts "Program will self destruct in 5 seconds"
+    sleep(7)
     end
     age 
   end 
@@ -58,6 +60,8 @@ class Interface
     if age_verifier >= 21
       input = nil
       while input != "exit"
+        puts "---------------------------------------------------------------------"
+        puts "Top 50 craft beers"
         puts "---------------------------------------------------------------------"
         list_beers
         select_beer
