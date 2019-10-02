@@ -21,7 +21,7 @@ class Interface
     if age < 21 
     puts "Sorry, You must be at least 21 years old to use Top Beer Finder"
     puts "Program will self destruct in 5 seconds"
-    sleep(7)
+    sleep(5)
     end
     age 
   end 
