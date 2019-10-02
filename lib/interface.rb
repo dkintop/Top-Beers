@@ -24,13 +24,14 @@ class Interface
     puts "Please enter the number of the beer you would like to know more about"
     input = gets.chomp.to_i
     if input >= 1 && input <= 50
-      puts "--------------------------"
+      puts "---------------------------------------"
       puts "Good choice!"
       puts "Rank: #{input}"
       puts "Beer name: #{Beer.all[input - 1].name}"
       puts "Made by: #{Beer.all[input - 1].brewery}"
       puts "Type: #{Beer.all[input - 1].type}"
       puts "ABV: #{Beer.all[input - 1].abv}"
+      puts "---------------------------------------"
     else 
       puts "Please select a valid option"
     end
@@ -48,12 +49,13 @@ class Interface
       while input != "exit"
         list_beers
         select_beer
-        puts "To know more about a different beer on our list enter you're favorite word, to exit enter 'exit'"
+        puts "To know more about a different beer on our list press enter, to exit type 'exit' and press enter."
         input = gets.chomp 
       end 
-      puts "--------------------------"
+      puts "---------------------------------------"
       puts "Bye!"
-      puts "All product information displayed by this application provided by https://www.beeradvocate.com/beer/top-rated/"
+      puts "All product information displayed by this application provided by:" 
+      puts "https://www.beeradvocate.com/beer/top-rated/"
     end
   end 
 end 

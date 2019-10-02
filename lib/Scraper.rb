@@ -1,4 +1,4 @@
-require 'nokogiri'
+ require 'nokogiri'
 require 'pry'
 require 'open-uri'
 require_relative 'Beer.rb'
@@ -32,9 +32,7 @@ end
 
 
    
-    #all beers XML array = doc.search(".hr_bottom_light[@align='left']")
-    #entire table = doc.css("#ba-content > table")
-    #binding.pry
+ 
 
 
 
