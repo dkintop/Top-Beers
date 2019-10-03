@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-A simple command line interface app. Follow on screen prompts.
+A simple command line interface app. after cloning, cd into Top-Beers directory and run bundle install to install all gemfile dependencies. You can then run the application by enterring 'ruby bin/beer' into your terminal.
 
 ## Development
 
