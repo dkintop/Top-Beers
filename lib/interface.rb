@@ -34,7 +34,7 @@ class Interface
   end 
   
   def choice_messages
-    ["Good choice!", "Nice pick!", "That's a good one!", "Great!, here you go!", "One of the best!"]
+    ["Good choice!", "Nice pick!", "That's a good one!", "Great! Here you go!", "One of the best!"]
   end 
   
   
@@ -42,7 +42,7 @@ class Interface
     puts "---------------------------------------------------------------------"
     puts "Please enter the number of the beer you would like to know more about"
     input = gets.chomp.to_i
-    if input >= 1 && input <= 50
+    if input >= 1 && input <= Beer.all.length
       puts "---------------------------------------------------------------------"
       puts choice_messages.sample
       puts "Rank: #{input}"
