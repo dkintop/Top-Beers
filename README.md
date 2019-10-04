@@ -1,4 +1,4 @@
-# BeerCLI
+# Top-Beers CLI gem
 
 This gem provides a basic CLI interface to allow users to obtain basic information on the top 50 rated beers on beeradvocate.com.
 
